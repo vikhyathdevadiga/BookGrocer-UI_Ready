@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_bar_layout">
+
+            <EditText
+                style="@style/editTextTheme"
+                android:id="@+id/searchbar"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:digits="0,1,2,3,4,5,6,7,8,9,*,qwertzuiopasdfghjklyxcvbnm"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:background="@drawable/custom_input"
+                android:hint="@string/search_bar_hint"
+                android:drawablePadding="10dp"
+                android:layout_toLeftOf="@id/filterButton"
+                android:layout_toStartOf="@id/filterButton"
+                android:drawableLeft="@drawable/search"
+                android:drawableStart="@drawable/search"
+                android:autofillHints="@string/search_bar_hint"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:background="#00ffffff"
+                android:src="@drawable/filter"
+                android:id="@+id/filterButton"
+                android:paddingLeft="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/image_text"
+                android:paddingRight="10dp"
+                android:layout_marginTop="20dp"
+                android:foregroundGravity="center"/>
+
+        </RelativeLayout>
+
+
+        <GridView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_bar_layout"
+            android:id="@+id/gridview"
+            android:horizontalSpacing="30dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:verticalSpacing="15dp"
+            android:scrollbars="none"
+            android:numColumns="2">
+
+
+        </GridView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:behavior_hideable="true"
+                android:id="@+id/design_bottom_sheet"
+                android:background="@color/colorPrimary"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <RelativeLayout
+                    android:padding="20dp"
+                    android:id="@+id/layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/filter_text"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="#00ffffff"
+                        android:text="@string/btn_cancel_text"
+                        android:id="@+id/btn_cancel"
+                        android:textAllCaps="false"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout"
+                    android:layout_above="@id/btn_layout"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sort_by"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp">
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/featured"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/price_low_to_high" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/price_high_to_low" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/publication_date" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/a_z"/>
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/genre"
+                            android:layout_marginTop="10dp"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp">
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/biography"
+                                android:checked="true"/>
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/bus_and_eco" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/children" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/cookery" />
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:text="@string/fiction" />
+
+                        </RadioGroup>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/avg_cus_rev"/>
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp">
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:drawableRight="@drawable/rate_5"
+                                android:drawableEnd="@drawable/rate_5"
+                                android:checked="true"
+                                android:drawablePadding="10dp"/>
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:drawableRight="@drawable/rate_4"
+                                android:drawableEnd="@drawable/rate_4"
+                                android:drawablePadding="10dp"/>
+
+                            <RadioButton
+                                style="@style/radioButtonText"
+                                android:drawableRight="@drawable/rate_3"
+                                android:drawableEnd="@drawable/rate_3"
+                                android:drawablePadding="10dp"/>
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:paddingTop="20dp"
+                    android:id="@+id/btn_layout"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btn_appply"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:background="@drawable/curved_btn"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

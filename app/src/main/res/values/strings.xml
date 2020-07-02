@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Book Grocer</string>
+    <string name="first_slide_title">Discounted Secondhand Books</string>
+    <string name="second_slide_title">20 Book Grocers Nationally</string>
+    <string name="third_slide_title">Sell or Recycle Your Old Books With Us</string>
+
+    <string name="first_slide_sub_title">Used and near new secondhand books at great prices.</string>
+    <string name="second_slide_sub_title">We\'ve successfully opened 20 stores across Australia.</string>
+    <string name="third_slide_sub_title">If you\'re looking to downsize, sell or recycle old books, the Book Grocer can help.</string>
+    <string name="large_text">It seems as this is your first time using our app, please enter your location so we can filter our results and stock accordingly to your local store.\n\n
+        If you choose to skip, you can change your location at any time in your account settings.</string>
+    <string name="news_letter_text">Receive our monthly newsletter and receive updates on new stock, books and the occasional promotion.</string>
+
+    <string name="filter_text">Filter</string>
+    <string name="btn_cancel_text">Cancel</string>
+    <string name="sort_by">Sort By</string>
+    <string name="featured">Featured Titles</string>
+    <string name="price_low_to_high">Price: Low to High</string>
+    <string name="price_high_to_low">Price: High to Low</string>
+    <string name="publication_date">Publication Date</string>
+    <string name="a_z">A - Z</string>
+    <string name="genre">Genre</string>
+
+    <string name="biography">Biography</string>
+    <string name="bus_and_eco">Business and Economics</string>
+    <string name="children">Children</string>
+    <string name="cookery">Cookery</string>
+    <string name="fiction">Fiction</string>
+    <string name="heart_of_hell">The Heart of Hell</string>
+
+    <string name="avg_cus_rev">Average Customer Review</string>
+
+    <string name="btn_appply">Apply</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="form_code">Group Special Code (Optional) </string>
+    <string name="form_name">Name</string>
+    <string name="form_email">Email Address</string>
+    <string name="form_password">Password</string>
+    <string name="form_stay_logged_in">Stay Logged In</string>
+    <string name="form_uwill_stay_logged_in">You will stay logged in</string>
+    <string name="form_forgot_pass">Forgotten Password?</string>
+    <string name="form_no_account">Don\'t have account? Sign Up</string>
+    <string name="form_f_l_name">First and Last Name</string>
+    <string name="form_phone">Phone Number</string>
+    <string name="form_newsletter">Please sign me up for the monthly newsletter.</string>
+    <string name="latest_update">You will receive our latest updates.</string>
+
+    <string name="help">Help Us Help You</string>
+    <string name="state">State</string>
+    <string name="city">City</string>
+    <string name="skip">Skip</string>
+
+    <!--    User Profile-->
+    <string name="user_name">Will Newman</string>
+    <string name="user_bio">Constantly travelling and keeping up to date with business related books.</string>
+    <string name="user_location">location - Newcastle - Australia</string>
+    <string name="user_tot_books">21</string>
+    <string name="user_tot_reviews">5</string>
+    <string name="books">Books</string>
+    <string name="reviews">Reviews</string>
+    <string name="user_edit">Edit Profile</string>
+    <string name="user_tot_purchase">Your purchases (21)</string>
+
+    <string name="image_text">ImageView</string>
+
+    <!--    Home Fragment recyclerview headings-->
+    <string name="recycler_top_pics">Top Pics</string>
+    <string name="recycler_best_sellers">Best Sellers</string>
+    <string name="recycler_genrs">Genres</string>
+    <string name="recycler_graphics">Graphic Novels</string>
+    <string name="recycler_recently_viewed">Recently Viewed</string>
+    <string name="monthly_newsletter">Monthly Newsletter</string>
+    <string name="search_bar_hint">Search Books, Authors, or ISBN</string>
+
+    <string name="app_tagline">Books For Every Taste.</string>
+
+    <string name="add_to_cart">Add to cart</string>
+    <string name="add_to_wishlist">Add to wishlist</string>
+
+    <string name="read_more">Read more ></string>
+    <string name="review_1">A must read for everybody. This book taught me so many things about...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

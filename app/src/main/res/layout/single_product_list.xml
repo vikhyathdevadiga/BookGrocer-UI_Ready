@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="174dp"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/purchased_1"
+            android:contentDescription="@string/image_text"
+            android:id="@+id/product_img"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/product_img"
+            android:layout_toEndOf="@id/product_img">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/product_title"
+                android:textColor="#BF242126"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_title"
+                android:textSize="12sp"
+                android:id="@+id/product_autor"/>
+
+            <RatingBar
+                android:id="@+id/product_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_below="@id/product_autor"
+                android:rating="2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_description"
+                android:maxLines="2"
+                android:layout_below="@id/product_rating"
+                />
+            
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/product_description"
+                android:background="@drawable/gradient_btn"
+                android:text="@string/add_to_cart"
+                android:textSize="12sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:layout_toLeftOf="@id/product_add_to_cart"
+                android:layout_toStartOf="@id/product_add_to_cart"
+                android:textAllCaps="false"
+                android:id="@+id/product_add_to_cart"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="12sp"
+                android:minHeight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_below="@id/product_description"
+                android:background="@drawable/btn_outline"
+                android:text="@string/add_to_wishlist"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/product_add_to_cart"
+                android:layout_toEndOf="@id/product_add_to_cart"
+                android:layout_marginStart="20dp"
+                android:id="@+id/product_add_to_whishlist"
+                android:textColor="@color/colorSecondary"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>

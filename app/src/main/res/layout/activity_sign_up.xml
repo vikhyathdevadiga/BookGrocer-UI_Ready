@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SignIn">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:id="@+id/input_layout">
+
+        <EditText
+            style="@style/editTextTheme"
+            android:hint="@string/form_f_l_name"
+            android:inputType="text"
+            android:autofillHints="@string/form_f_l_name"
+            android:id="@+id/bg_fl_name"/>
+
+        <EditText
+            style="@style/editTextTheme"
+            android:hint="@string/form_email"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/bg_fl_name"
+            android:id="@+id/bg_email_address"
+            android:autofillHints=""/>
+
+        <EditText
+            style="@style/editTextTheme"
+            android:hint="@string/form_phone"
+            android:inputType="phone"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/bg_email_address"
+            android:id="@+id/bg_phone_number"
+            android:autofillHints="" />
+
+        <EditText
+            style="@style/editTextTheme"
+            android:hint="@string/form_code"
+            android:inputType="text"
+            android:layout_below="@id/bg_phone_number"
+            android:id="@+id/bg_group_special_code"
+            android:autofillHints=""/>
+
+        <EditText
+            style="@style/editTextTheme"
+            android:hint="@string/form_password"
+            android:layout_below="@id/bg_group_special_code"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:autofillHints=""/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/form_newsletter"
+            android:id="@+id/remember"
+            android:layout_below="@id/password"
+            android:paddingTop="10dp"
+            android:drawableLeft="@drawable/btn_unchecked"
+            android:drawableStart="@drawable/btn_unchecked"
+            android:drawablePadding="10dp" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_outline"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorSecondary"
+        android:layout_marginTop="30dp"/>
+
+</LinearLayout>

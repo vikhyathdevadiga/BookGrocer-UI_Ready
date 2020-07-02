@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/nav_our_books"
+            android:title="Our Books" />
+
+        <item
+            android:id="@+id/nav_our_stores"
+            android:title="Our Stores" />
+
+        <item
+            android:id="@+id/nav_careers"
+            android:title="Careers" />
+
+        <item
+            android:id="@+id/nav_sell_with_us"
+            android:title="Sell With Us" />
+
+        <item
+            android:id="@+id/nav_sign_in"
+            android:title="Sign In" />
+
+        <item
+            android:id="@+id/nav_news_letter"
+            android:title="Newsletter" />
+    </group>
+
+</menu>

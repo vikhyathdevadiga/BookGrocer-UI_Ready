@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/user_review_product_img"
+            android:layout_toStartOf="@id/user_review_product_img">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/review_1"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/read_more"
+                android:background="#00ffffff"
+                android:textAllCaps="false"
+                android:textStyle="normal"
+                android:textAlignment="viewStart"
+                android:layout_gravity="start"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?android:attr/ratingBarStyleSmall"
+                android:numStars="5"
+                android:rating="3"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="63dp"
+            android:layout_height="100dp"
+            android:id="@+id/user_review_product_img"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/image_text"
+            android:src="@drawable/purchased_1"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
