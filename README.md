@@ -1,6 +1,8 @@
 # BookGrocer-UI_Ready
 This is the ready to use UI components implemented in XML and Java.
 
+<img src="Preview_UI_Kit.png" height=500></img>
+
 Components included : 
 
   * Bottom Navigation
